@@ -1,7 +1,6 @@
 import { Post, PrismaClient } from '@prisma/client';
 const prisma = new PrismaClient();
 
-// モデル投入用のデータ定義
 const postData: Post[] = [
   {
     id: 'fa119cb6-9135-57f5-8a5a-54f28d566d0e',

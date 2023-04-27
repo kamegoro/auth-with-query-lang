@@ -5,6 +5,7 @@ import { PrismaService } from './prisma.service';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { GraphQLModule } from '@nestjs/graphql';
 import { PostsModule } from './posts/posts.module';
+import { UsersModule } from './users/users.module';
 import * as path from 'path';
 
 @Module({
@@ -17,6 +18,7 @@ import * as path from 'path';
       autoSchemaFile: path.join(process.cwd(), 'src/schema.gql'),
     }),
     PostsModule,
+    UsersModule,
   ],
 })
 export class AppModule {}

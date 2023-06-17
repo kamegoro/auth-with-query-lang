@@ -29,6 +29,9 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
+      - name: Set legacy-peer-deps
+        run: npm config set legacy-peer-deps true
+
       - name: Install dependencies
         run: npm install
 
